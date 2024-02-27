@@ -7,6 +7,10 @@
 
 data "aws_region" "current" {}
 
+provider "aws" {
+  region = var.aws_region
+}
+
 module "iam" {
   source = "./modules/iam"
 

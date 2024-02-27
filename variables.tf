@@ -139,11 +139,17 @@ variable "user_supplied_userdata_path" {
 
 variable "vault_version" {
   type        = string
-  default     = "1.11.0"
+  default     = "1.15.5"
   description = "Vault version"
 }
 
 variable "vpc_id" {
   type        = string
   description = "VPC ID where Vault will be deployed"
+}
+
+variable "aws_region" {
+  description = "AWS region to deploy resources into"
+  type        = string
+  default     = "us-east-1"
 }

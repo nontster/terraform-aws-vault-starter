@@ -66,6 +66,8 @@ seal "awskms" {
   kms_key_id = "${kms_key_arn}"
 }
 
+plugin_directory = "/opt/vault/plugins.d"
+
 EOF
 
 # vault.hcl should be readable by the vault group only
